@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google Sticy ads</title>
     <style>
-        .sticky-ads {
+                .sticky-ads {
             position: fixed;
             bottom: 0;
             left: 0;
@@ -26,22 +26,22 @@
         }
 
         .sticky-ads-close {
-            width: 40px;
+            width: 50px;
             height: 30px;
             display: flex;
             align-items: center;
             justify-content: center;
-            border-radius: 12px 0 0;
+            border-radius: 9px 4px 0 0;
             position: absolute;
             right: 0;
-            top: -30px;
-            background-color: #b1b1b1;
+            top: -28px;
+            background-color: #fefefe;
             box-shadow: 0 -6px 18px 0 rgba(9, 32, 76, .08);
         }
 
         .sticky-ads .sticky-ads-close svg {
-            width: 22px;
-            height: 22px;
+            width: 30px;
+            height: 30px;
             fill: #000;
         }
 
@@ -51,6 +51,7 @@
             position: relative;
             height: 85px;
             width: 100%;
+			padding-top: 2px;
             margin-right: 5px;
             margin-left: 5px;
         }
@@ -58,7 +59,7 @@
 </head>
 
 <body>
-<!-- <b:if cond='data:blog.isMobileRequest == &quot;true&quot;'> //only show in mobile device -->
+    <!-- <b:if cond='data:blog.isMobileRequest == &quot;true&quot;'> //only show in mobile device -->
         <div class='sticky-ads' id='sticky-ads'>
             <div class='sticky-ads-close'
                 onclick='document.getElementById(&quot;sticky-ads&quot;).style.display=&quot;none&quot;'><svg
